@@ -6,7 +6,7 @@ function themesF() {
   const textArr2 = [];
   const textArr3 = [];
 
-  fs.readFileSync("./topics/nighthawk_flashcard_data.txt", "utf-8")
+  fs.readFileSync("./topics/tema1.txt", "utf-8")
     .trim()
     .split("\n\n")
     .forEach((el) => textArr1.push(el.split("\n")));
@@ -16,7 +16,7 @@ function themesF() {
   }
   themes.push(themeOneArr);
 
-  fs.readFileSync("./topics/otter_flashcard_data.txt", "utf-8")
+  fs.readFileSync("./topics/tema2.txt", "utf-8")
     .trim()
     .split("\n\n")
     .forEach((el) => textArr2.push(el.split("\n")));
@@ -26,7 +26,7 @@ function themesF() {
   }
   themes.push(themeTwoArr);
 
-  fs.readFileSync("./topics/raccoon_flashcard_data.txt", "utf-8")
+  fs.readFileSync("./topics/tema3.txt", "utf-8")
     .trim()
     .split("\n\n")
     .forEach((el) => textArr3.push(el.split("\n")));
